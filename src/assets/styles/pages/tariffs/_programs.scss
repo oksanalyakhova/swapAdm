@@ -1,0 +1,131 @@
+.programsList {
+  .table-block {
+    .table {
+      @media (max-width: 1079px) {
+        max-width: 600px;
+      }
+
+      &-row  {
+        .table-status {
+          .toggle {
+            width: var(--toggle-width,21px);
+            height: var(--toggle-height,9px);
+            outline: none;
+
+            &-container {
+              &:focus {
+                box-shadow: none;
+              }
+            }
+          }
+          .toggle-on {
+            background: var(--toggle-bg-on,#02C076);
+            border-color: var(--toggle-border-on,#02C076);
+          }
+          .toggle-handle-on {
+            transform: translateX(-110%);
+          }
+
+          .toggle-handle {
+            width: 7px;
+            height: 7px;
+            top: 1px;
+          }
+        }
+      }
+      &-headers {
+        .table-status {
+          .hover-info {
+            .polygon {
+              left: 140px;
+            }
+          }
+        }
+      }
+
+      &-name {
+        padding-left: 32px;
+        font-weight: 700;
+        width: 100%;
+        max-width: 20%;
+
+        @media (max-width: 1079px) {
+          position: sticky;
+          top: 0;
+          bottom: 0;
+          overflow-y: auto;
+          padding-left: 16px;
+          max-width: 20%;
+        }
+      }
+
+      &-value {
+        width: 100%;
+        max-width: 20%;
+
+        @media (max-width: 1079px) {
+          padding-left: 18px;
+          max-width: 26%;
+        }
+      }
+
+      &-edit {
+        padding: 12px 0;
+
+        @media (max-width: 1079px) {
+          max-width: 12%;
+        }
+        .info {
+          &-edit {
+            img {
+              background: rgba(10, 104, 247, 0.06);
+              border-radius: 8px;
+              padding: 8px;
+              cursor: pointer;
+              transition: all .3s ease-in-out;
+
+              &:hover {
+                background: rgba(10, 104, 247, 0.12);
+              }
+            }
+          }
+        }
+      }
+
+      &-status {
+        width: 100%;
+        max-width: 25%;
+        text-align: center;
+
+        @media (max-width: 1079px) {
+          max-width: 25%;
+        }
+
+        .disabled {
+          opacity: 1;
+        }
+
+        .vue-js-switch {
+          .v-switch-core {
+            width: 44px !important;
+            height: 16px !important;
+
+            .v-switch-button {
+              width: 10px !important;
+              height: 10px !important;
+              transform: translate3d(22px, 3px, 0px);
+            }
+          }
+        }
+      }
+
+      &-id {
+        width: 100%;
+        max-width: 30%;
+        @media (max-width: 1079px) {
+          max-width: 12%;
+        }
+      }
+    }
+  }
+}

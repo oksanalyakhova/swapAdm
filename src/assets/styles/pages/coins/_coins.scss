@@ -1,0 +1,94 @@
+.coinsList {
+  .table-block {
+    .table {
+      &-headers {
+        th {
+          &:first-child {
+            padding-left: 32px;
+          }
+        }
+        &-isTrue {
+          text-align: center;
+          padding-left: 12px;
+        }
+      }
+
+      &-img {
+        padding-left: 32px;
+        font-weight: 700;
+        width: 100%;
+        max-width: 1%;
+
+        img {
+          max-width: 24px;
+          height: auto;
+        }
+      }
+
+      &-coin {
+        width: 100%;
+        max-width: 6%;
+        font-weight: 700;
+        color: #1B1A1C;
+      }
+
+      &-coinName {
+        width: 100%;
+        max-width: 16%;
+      }
+
+      &-userFee {
+        width: 100%;
+        max-width: 8%;
+      }
+
+      &-priceRound {
+        width: 100%;
+        max-width: 8%;
+      }
+
+      &-tradeRound {
+        width: 100%;
+        max-width: 9%;
+      }
+
+      &-rating {
+        width: 100%;
+        max-width: 7%;
+      }
+
+      &-isTrue {
+        width: 100%;
+        max-width: 7%;
+        text-align: center;
+      }
+
+      &-edit {
+        width: 100%;
+        max-width: 5%;
+        .info {
+          &-edit {
+            width: 32px;
+            height: 32px;
+            background: rgba(10, 104, 247, 0.06);
+            border-radius: 8px;
+            vertical-align: center;
+            text-align: center;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            display: flex;
+            justify-content: center;
+
+            &:hover {
+              background: rgba(10, 104, 247, 0.12);
+            }
+
+            img {
+              max-width: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

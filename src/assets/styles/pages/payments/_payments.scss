@@ -1,0 +1,127 @@
+.paymentsList {
+  .table-block {
+    &-header {
+      &-title {
+        @media (max-width: 1079px) {
+          margin-bottom: 10px;
+        }
+      }
+      &-filters {
+        @media (max-width: 1079px) {
+          display: flex;
+          flex-direction: row-reverse;
+          overflow: auto;
+          min-width: 400px;
+          justify-content: flex-end;
+
+          &-block {
+            display: flex;
+            flex-direction: row;
+          }
+          &-filter {
+            min-width: 150px;
+          }
+        }
+
+        &-block {
+          display: flex;
+        }
+        &-dropsearch {
+          top: 80px;
+        }
+      }
+    }
+
+    .mobile {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      min-height: 100vh;
+      border-radius: 0;
+      z-index: 999;
+
+      .title {
+        font-size: 20px;
+        padding: 20px 20px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .close {
+          width: 14px;
+          height: 14px;
+        }
+      }
+      .input {
+        padding-top: 16px;
+      }
+
+      .checkbox {
+        margin-right: 16px;
+      }
+    }
+
+    .table {
+
+      &-login {
+        padding-left: 32px;
+        width: 100%;
+        max-width: 17%;
+
+        @media (max-width: 1079px) {
+          position: sticky;
+          top: 0;
+          bottom: 0;
+          overflow-y: auto;
+          padding-left: 16px;
+          max-width: 10%;
+        }
+      }
+
+      &-createDate {
+        width: 100%;
+        max-width: 15%;
+      }
+
+      &-address {
+        width: 100%;
+        max-width: 35%;
+      }
+
+      &-amount {
+        width: 100%;
+        max-width: 12%;
+      }
+
+      &-status {
+        width: 100%;
+        max-width: 12%;
+        transition: all .5s ease;
+
+        .custom-select {
+          .selected {
+            &::after {
+              display: none;
+            }
+          }
+        }
+
+        .disabled {
+          opacity: 1;
+        }
+
+        .vue-js-switch {
+          .v-switch-core {
+            width: 44px !important;
+            height: 16px !important;
+
+            .v-switch-button {
+              width: 10px !important;
+              height: 10px !important;
+              transform: translate3d(22px, 3px, 0px);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.status {
+  display: flex;
+
+  &-item {
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+  }
+
+  .completed {
+    background: #02C076;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    padding: 8px 16px 8px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    white-space: nowrap;
+    display: inline;
+  }
+
+  .pay {
+    background: #44A5FF;
+  }
+
+  .exchange {
+    background: #673DFD;
+  }
+
+  .overdue {
+    background: #FF783E;
+  }
+
+  .returned {
+    background: red;
+  }
+}

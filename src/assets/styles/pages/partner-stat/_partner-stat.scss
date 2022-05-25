@@ -1,0 +1,14 @@
+.partnerStat {
+  .table {
+    &-id {
+      padding-left: 32px;
+      font-weight: 700;
+    }
+    &-edit img{
+      background: rgba(10, 104, 247, 0.06);
+      border-radius: 8px;
+      padding: 8px;
+      cursor: pointer;
+    }
+  }
+}

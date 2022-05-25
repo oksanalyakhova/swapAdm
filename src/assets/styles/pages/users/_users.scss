@@ -1,0 +1,165 @@
+.usersList {
+  .table-block {
+    &-header {
+      &-filters {
+        @media (max-width: 1079px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+
+    .table {
+      &-id {
+        padding-left: 32px;
+        font-weight: 700;
+        width: 100%;
+        max-width: 7%;
+
+        @media (max-width: 1079px) {
+          position: sticky;
+          top: 0;
+          bottom: 0;
+          overflow-y: auto;
+          padding-left: 16px;
+        }
+      }
+
+      &-login {
+        width: 100%;
+        max-width: 20%;
+      }
+
+      &-role {
+        width: 100%;
+        max-width: 4%;
+      }
+
+      &-createDate {
+        width: 100%;
+        max-width: 12%;
+      }
+
+      &-program {
+        width: 100%;
+        max-width: 10%;
+
+        .v-select {
+          max-width: 120px;
+
+          .vs__dropdown {
+            &-menu {
+              background: #FFFFFF;
+              box-shadow: 0 4px 24px rgba(15, 0, 58, 0.12);
+              border-radius: 12px;
+              border: none;
+              width: 200px;
+              padding: 0;
+            }
+
+            &-option {
+              padding: 14px 20px;
+
+              &--highlight {
+                background: rgba(27, 26, 28, 0.03);
+                color: #1B1A1C;
+              }
+            }
+          }
+        }
+
+        .vs__dropdown-toggle {
+          border: none;
+        }
+      }
+
+      &-status {
+        width: 100%;
+        max-width: 15%;
+        text-align: center;
+
+        .text {
+          .hover-info {
+            .polygon {
+              left: 100px !important;
+            }
+          }
+        }
+
+        .disabled {
+          opacity: 1;
+        }
+
+        .vue-js-switch {
+          .v-switch-core {
+            width: 44px !important;
+            height: 16px !important;
+
+            .v-switch-button {
+              width: 10px !important;
+              height: 10px !important;
+              transform: translate3d(22px, 3px, 0px);
+            }
+          }
+        }
+      }
+
+      &-password {
+        .info-block {
+          display: flex;
+          flex-direction: row;
+        }
+      }
+
+      &-profile {
+        width: 100%;
+        max-width: 17%;
+
+        .info {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          max-width: 160px;
+          margin: auto;
+
+          &-profile {
+            img {
+              background: rgba(10, 104, 247, 0.06);
+              border-radius: 8px;
+              padding: 8px;
+              cursor: pointer;
+              transition: all .3s ease-in-out;
+
+              &:hover {
+                background: rgba(10, 104, 247, 0.12);
+              }
+            }
+          }
+
+          &-password {
+            background: rgba(10, 104, 247, 0.06);
+            border-radius: 8px;
+            padding: 8px;
+            font-size: 14px;
+            line-height: 20px;
+            color: #0A68F7;
+            display: flex;
+            flex-direction: row;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+              background: rgba(10, 104, 247, 0.12);
+            }
+
+            img {
+              padding: 0 3px;
+              margin-right: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

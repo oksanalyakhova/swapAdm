@@ -1,0 +1,11 @@
+.status {
+  transition: all .3s ease-in-out;
+  &-error {
+    background: rgba(255, 120, 62, 0.3)!important;
+  }
+
+  &-success {
+    background: rgba(2, 192, 118, 0.13)!important;
+  }
+}
+

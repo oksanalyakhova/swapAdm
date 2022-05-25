@@ -1,0 +1,37 @@
+.chains-block-table-row {
+  .table-cell {
+    .toggle {
+      width: var(--toggle-width,34px);
+      height: var(--toggle-height,12px);
+      outline: none;
+
+      &-container {
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    .toggle-on {
+      background: var(--toggle-bg-on,rgba(10, 104, 247, 0.32));
+      border-color: transparent;
+    }
+
+    .toggle-handle-on {
+      transform: translateX(-91%);
+      background: #0A68F7;
+      box-shadow: 0 1px 2px rgba(27, 26, 28, 0.16);;
+    }
+
+    .toggle-handle-off {
+      left: -2px;
+    }
+
+    .toggle-handle {
+      width: 20px;
+      height: 20px;
+      top: -3.5px;
+      box-shadow: 0 1px 1px rgba(27, 26, 28, 0.14), 0px 1px 3px rgba(27, 26, 28, 0.2);
+    }
+  }
+}

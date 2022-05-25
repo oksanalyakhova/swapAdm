@@ -1,0 +1,143 @@
+.rating_list {
+  background: #FFFFFF;
+  /* grayscale / divider */
+
+  border: 1px solid #DFE0EB;
+  box-sizing: border-box;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 49%;
+
+  @media (max-width: 1079px) {
+    max-width: 100%;
+  }
+
+  &-block {
+    &-title {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 32px 32px 0;
+      margin-bottom: 20px;
+      @media (max-width: 1079px) {
+        flex-direction: column;
+        padding: 16px;
+      }
+
+      .title {
+        font-size: 20px;
+        font-weight: 700;
+      }
+
+      .dates {
+        display: flex;
+        flex-direction: row;
+
+        &-item {
+          padding: 6px 12px;
+          margin: 2px;
+          font-size: 14px;
+          font-weight: 500;
+          background: #FCFDFE;
+          border: 1px solid #F0F1F7;
+          box-sizing: border-box;
+          border-radius: 6px;
+          color: #0A68F7;
+          cursor: pointer;
+          transition: all .3s ease-in-out;
+
+          &:hover {
+            border: 1px solid #0A68F7;
+          }
+        }
+
+        .active {
+          color: #FCFDFE;
+          background: #0A68F7;
+        }
+      }
+    }
+
+    &-table {
+      .table {
+        margin-bottom: 0;
+
+        & > :not(:first-child) {
+          .bottom {
+            border-bottom: transparent;
+          }
+
+          border-top: 1px solid currentColor;
+        }
+
+        &-headers {
+          .text {
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            color: #9FA2B4;
+            font-weight: 300;
+
+            &-total {
+              text-align: right;
+              padding-right: 32px;
+            }
+          }
+
+        }
+
+        &-cell {
+          width: 100%;
+          max-width: 10%;
+          vertical-align: middle;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+          color: #1B1A1C;
+
+          b {
+            font-weight: 300;
+            color: #9FA2B4;
+          }
+
+          &-img {
+            padding-left: 32px;
+            padding-right: 0;
+            width: 100%;
+            max-width: 6%;
+
+
+          }
+
+          &-name {
+            padding-left: 0;
+            width: 100%;
+            max-width: 30%;
+            font-weight: 700;
+          }
+
+          &-opertions {
+            width: 100%;
+            max-width: 20%;
+          }
+
+          &-total {
+            text-align: right;
+            padding-right: 32px;
+            width: 100%;
+            max-width: 20%;
+
+            b {
+              font-weight: 300;
+              color: #7C86A0;
+            }
+          }
+
+          &-today {
+
+          }
+        }
+      }
+    }
+  }
+}
